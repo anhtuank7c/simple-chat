@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { addNavigationHelpers } from 'react-navigation';
 import { connect } from 'react-redux';
-import RootNavigation from './navigations/RootNavigation';
+import Root from './navigations/Root';
 
 class AppNavigator extends Component {
     render() {
         return (
-            <RootNavigation
+            <Root
                 navigation={addNavigationHelpers({
                     dispatch: this.props.dispatch,
                     state: this.props.nav
@@ -16,8 +16,4 @@ class AppNavigator extends Component {
     }
 }
 
-const mapStateToProps = (state) => {
-    return { nav: state.nav };
-};
-
-export default connect(mapStateToProps)(AppNavigator);
+export default connect(state => ({ nav: state.nav }))(AppNavigator);

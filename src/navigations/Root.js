@@ -1,16 +1,20 @@
 import { StackNavigator } from 'react-navigation';
+import Authorized from './Authorized';
+import Login from '../screens/unauthorized/Login';
 
-import Login from '../screens/Login';
-import Chat from '../screens/Chat';
-
-const RootNavigation = StackNavigator({
+const Root = StackNavigator({
     Unauthorized: { screen: Login },
-    Authorized: { screen: Chat },
+    Authorized: { screen: Authorized },
 }, {
-        headerMode: 'screen'
+        headerMode: 'screen',
+        navigationOptions: {
+            header: {
+                visible: false
+            }
+        }
     });
 
-export default RootNavigation;
+export default Root;
 
 /**
  * navigate (push)

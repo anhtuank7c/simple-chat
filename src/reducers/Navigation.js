@@ -1,6 +1,6 @@
-import RootNavigation from '../navigations/RootNavigation';
+import Root from '../navigations/Root';
 
 export default (state, action) => {
-    const newState = RootNavigation.router.getStateForAction(action, state);
+    const newState = Root.router.getStateForAction(action, state);
     return newState || state;
 };

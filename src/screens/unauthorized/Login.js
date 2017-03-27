@@ -3,7 +3,7 @@ import { View, Text, ActivityIndicator, TouchableOpacity } from 'react-native';
 import { connect } from 'react-redux';
 import firebase from 'firebase';
 import { AccessToken, LoginManager } from 'react-native-fbsdk';
-import { loginSuccess } from '../actions/Authenticate';
+import { loginSuccess } from '../../actions/Authenticate';
 
 const config = {
     apiKey: "AIzaSyAfpxJrikhNNKy0p2s5a2XdGHh1PrNaKJ0",
