@@ -93,12 +93,7 @@ const styles = {
     }
 };
 
-const mapStateToProps = (state) => {
-    console.log('mapStateToProps', state);
-    return {
-        logged: state.authentication.loggedIn,
-        user: state.authentication.user
-    };
-};
-
-export default connect(mapStateToProps, { loginSuccess })(Login);
+export default connect(state => ({
+    logged: state.authentication.loggedIn,
+    user: state.authentication.user
+}), { loginSuccess })(Login);

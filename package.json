@@ -11,9 +11,11 @@
 		"react": "~15.4.1",
 		"react-native": "0.42.3",
 		"react-native-fbsdk": "^0.5.0",
+		"react-native-gifted-chat": "^0.1.4",
 		"react-navigation": "^1.0.0-beta.7",
 		"react-redux": "^5.0.3",
 		"redux": "^3.6.0",
+		"redux-logger": "^3.0.1",
 		"redux-thunk": "^2.2.0"
 	},
 	"devDependencies": {
