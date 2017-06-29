@@ -38,7 +38,6 @@ export const findRoomByUser = (me, friend) => {
                     if (snap.val()) {
                         console.log('FOUND ROOM', room.key);
                         roomKey = room.key;
-                        return;
                     }
                 });
                 if (roomKey != null) {
